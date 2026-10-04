@@ -48,7 +48,7 @@ Uploading is controlled per project by the **`Wiki publishing`** row in `project
 
 ## Steps
 
-1. **Check the configuration.** The tool reads, in order: `ado.properties` at the kit root (local only, git-ignored), then the `project.md` rows, then environment variables, then command options.
+1. **Check the configuration.** The tool reads, in order: `ado.properties` at the kit root (local only, git-ignored; template: `ado.properties.example`), then the `project.md` rows, then environment variables, then command options.
 
    | Setting | project.md row | Env var | Example |
    |---|---|---|---|

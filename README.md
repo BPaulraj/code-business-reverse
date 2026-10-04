@@ -169,7 +169,7 @@ The stakeholder document is always produced as Markdown, which renders on GitHub
 `python kit/tools/ado_wiki.py check` shows the effective settings.
 
 1. Put the settings in `project.md`: `Wiki publishing`, `ADO org URL`, `ADO project`, `Wiki parent path` (and optionally `Wiki name`, `Wiki view`, `ADO API version`).
-2. Set the token as an environment variable: `ADO_PAT` (scope **Wiki: Read & write**). For local testing only, `ado.properties` at the kit root also works; it is git-ignored.
+2. Set the token as an environment variable: `ADO_PAT` (scope **Wiki: Read & write**). For local testing only, copy `ado.properties.example` to `ado.properties` at the kit root and fill it in; it is git-ignored.
 3. `/re-wiki build` to preview the tree in `projects/<name>/wiki/`, then `/re-wiki push --dry-run`, then `/re-wiki push`. Only changed pages are sent.
 
 No API possible? Commit `projects/<name>/wiki/` to an ADO repo and use **Publish code as wiki**. The folder already has the right file names and `.order` files.

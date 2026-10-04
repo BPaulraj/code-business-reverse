@@ -1,0 +1,38 @@
+# Azure DevOps connection settings for /re-wiki (kit/tools/ado_wiki.py)
+#
+# HOW TO USE
+#   1. Copy this file to "ado.properties" in the kit root (same folder as this file).
+#      ado.properties is git-ignored — it must NEVER be committed.
+#   2. Fill in your values below.
+#   3. Check: python kit/tools/ado_wiki.py check
+#
+# PRECEDENCE (later wins): this file  <  projects/<name>/project.md  <  environment variables  <  command-line options
+# PUBLISHING SWITCH: uploading is turned on ONLY by the "Wiki publishing" row in projects/<name>/project.md
+#                    (off | on-request | auto). Nothing in this file can enable uploads.
+
+# Organisation (cloud) or collection (on-prem) URL
+#   Azure DevOps Services : https://dev.azure.com/<your-organisation>
+#   Azure DevOps Server   : https://<your-server>/<collection>   e.g. https://ado.mycorp.local/DefaultCollection
+ado.org.url=https://dev.azure.com/your-organisation
+
+# Project that holds the wiki (usually the same project as the application code)
+ado.project=YourProject
+
+# Personal access token — scope: Wiki (Read & write), short expiry.
+# PREFERRED: leave this empty and set the ADO_PAT environment variable instead (it takes precedence).
+#   PowerShell (current session):  $env:ADO_PAT = "<token>"
+#   Windows (persistent):          setx ADO_PAT "<token>"
+#   bash:                          export ADO_PAT=<token>
+ado.pat=
+
+# Optional — wiki name (default: the first wiki in the project, normally the project wiki "<Project>.wiki")
+ado.wiki=
+
+# Optional — parent page under which the generated tree is published (no leading slash needed)
+ado.wiki.parent=Business Requirements
+
+# REST API version
+#   Azure DevOps Services : 7.1
+#   Azure DevOps Server 2022 : 7.0
+#   Azure DevOps Server 2020 : 6.0
+ado.api.version=7.1

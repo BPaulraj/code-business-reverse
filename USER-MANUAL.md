@@ -347,6 +347,7 @@ Each `/re-publish` increments the document version, reports the % confirmed, and
 | "python-docx missing" | `pip install -r kit/tools/requirements.txt` (or your internal mirror) |
 | No PDF produced | The exporter tests Edge, then Chrome, then Word. Set `KIT_BROWSER=<path to browser>`, or use `--pdf-engine word`. |
 | "diagram N not rendered" | The Mermaid diagram in the source `.md` is invalid (it would fail on GitHub too). Fix it in the working file and regenerate. |
+| `/re-wiki`: settings missing | Copy `ado.properties.example` to `ado.properties` (git-ignored) and fill it in, or set the `project.md` rows. Run `python kit/tools/ado_wiki.py check` to see the effective values. |
 | `/re-wiki`: authentication failed | Check `ADO_PAT` (not expired, scope Wiki Read & write), the org URL, and the project name. On-prem: check `ADO API version` and trust of the corporate certificate. |
 | `/re-wiki`: a diagram doesn't render in ADO | ADO uses an older Mermaid version. Simplify that diagram in the source working file, then re-publish. |
 | Output quality is too technical, vague or granular | Edit `kit/examples/good-vs-bad-rules.md` and `kit/RULES.md`, then re-run the component |
