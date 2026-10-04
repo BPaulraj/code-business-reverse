@@ -26,5 +26,6 @@ Follow `kit/RULES.md`. Start with §0: resolve `<OUT>` and `<TARGET>`. Templates
 4. **DB-resident business logic** (constraints, triggers, stored procedures, views that encode rules) becomes rules with the `DB` prefix in `<OUT>/03-capabilities/database/rules.md`. Use `capability.md` for a description of what logic lives in the DB.
 5. **Update `<OUT>/00-overview/glossary.md`.** Map each term to its table, column and enum aliases.
 6. Questions go to `<OUT>/01-domain/_questions.md`, defects to `<OUT>/01-domain/_defects.md`. Examples: orphan tables, status values never set, contradictory constraints.
+6a. **SQL objects:** run `python kit/tools/sql_scan.py database` (and any `evidence/database` component). Write `03-capabilities/database/sql-usage.md`, filling the *Objects defined* section with each object's business meaning and its BR-DB rules. Then run `python kit/tools/sql_inventory.py`. For MS SQL Server, check that `SQL default schema` is `dbo`.
 7. **Update the coverage-tracker row** for the database.
 8. **Final message:** entity count, a list of lifecycles found, the top questions for product.

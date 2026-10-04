@@ -1,0 +1,134 @@
+{
+ "component": "Shared database",
+ "paths": [
+  "packages/db/prisma"
+ ],
+ "commit": "ae607a63b46d52ef787464b70a96c33ca58d4062",
+ "objects": [
+  {
+   "object": "Company",
+   "database": "",
+   "access": "CU",
+   "via": [
+    "ORM (resolved)"
+   ],
+   "count": 1,
+   "sources": [
+    "packages/db/prisma/seed.ts:51"
+   ],
+   "test_only": false
+  }
+ ],
+ "procedures_called": [],
+ "definitions": [
+  {
+   "object": "User",
+   "type": "TABLE",
+   "source": "packages/db/prisma/migrations/20260815131827_init/migration.sql:2",
+   "references": {}
+  },
+  {
+   "object": "Wallet",
+   "type": "TABLE",
+   "source": "packages/db/prisma/migrations/20260815131827_init/migration.sql:14",
+   "references": {}
+  },
+  {
+   "object": "Transaction",
+   "type": "TABLE",
+   "source": "packages/db/prisma/migrations/20260815131827_init/migration.sql:22",
+   "references": {}
+  },
+  {
+   "object": "Company",
+   "type": "TABLE",
+   "source": "packages/db/prisma/migrations/20260815131827_init/migration.sql:35",
+   "references": {}
+  },
+  {
+   "object": "Holding",
+   "type": "TABLE",
+   "source": "packages/db/prisma/migrations/20260815131827_init/migration.sql:44",
+   "references": {}
+  },
+  {
+   "object": "Trade",
+   "type": "TABLE",
+   "source": "packages/db/prisma/migrations/20260815131827_init/migration.sql:55",
+   "references": {}
+  },
+  {
+   "object": "Invoice",
+   "type": "TABLE",
+   "source": "packages/db/prisma/migrations/20260815131827_init/migration.sql:70",
+   "references": {}
+  },
+  {
+   "object": "InboxMessage",
+   "type": "TABLE",
+   "source": "packages/db/prisma/migrations/20260815131827_init/migration.sql:79",
+   "references": {}
+  }
+ ],
+ "orm_maps": [
+  {
+   "entity": "User",
+   "table": "User",
+   "schema": "",
+   "kind": "prisma model",
+   "source": "packages/db/prisma/schema.prisma:10"
+  },
+  {
+   "entity": "Wallet",
+   "table": "Wallet",
+   "schema": "",
+   "kind": "prisma model",
+   "source": "packages/db/prisma/schema.prisma:26"
+  },
+  {
+   "entity": "Transaction",
+   "table": "Transaction",
+   "schema": "",
+   "kind": "prisma model",
+   "source": "packages/db/prisma/schema.prisma:35"
+  },
+  {
+   "entity": "Company",
+   "table": "Company",
+   "schema": "",
+   "kind": "prisma model",
+   "source": "packages/db/prisma/schema.prisma:48"
+  },
+  {
+   "entity": "Holding",
+   "table": "Holding",
+   "schema": "",
+   "kind": "prisma model",
+   "source": "packages/db/prisma/schema.prisma:59"
+  },
+  {
+   "entity": "Trade",
+   "table": "Trade",
+   "schema": "",
+   "kind": "prisma model",
+   "source": "packages/db/prisma/schema.prisma:72"
+  },
+  {
+   "entity": "Invoice",
+   "table": "Invoice",
+   "schema": "",
+   "kind": "prisma model",
+   "source": "packages/db/prisma/schema.prisma:88"
+  },
+  {
+   "entity": "InboxMessage",
+   "table": "InboxMessage",
+   "schema": "",
+   "kind": "prisma model",
+   "source": "packages/db/prisma/schema.prisma:97"
+  }
+ ],
+ "databases": [],
+ "dynamic_sql": [],
+ "cross_db": []
+}

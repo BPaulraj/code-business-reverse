@@ -9,6 +9,7 @@
 | Initialised | 2026-10-04 |
 | Output formats | md, docx, pdf |
 | Word template | (none) |
+| SQL default schema | (none) |
 | Wiki publishing | on-request |
 | Wiki name | Wiki |
 | Wiki parent path | Business Requirements |

@@ -1,0 +1,144 @@
+{
+ "component": "Web server (portal back end)",
+ "paths": [
+  "packages/server"
+ ],
+ "commit": "ae607a63b46d52ef787464b70a96c33ca58d4062",
+ "objects": [
+  {
+   "object": "User",
+   "database": "",
+   "access": "CRU",
+   "via": [
+    "ORM (unresolved name)"
+   ],
+   "count": 5,
+   "sources": [
+    "packages/server/src/modules/auth/authRoutes.ts:31",
+    "packages/server/src/modules/auth/authRoutes.ts:40",
+    "packages/server/src/modules/auth/authRoutes.ts:67",
+    "packages/server/src/modules/auth/authRoutes.ts:91",
+    "packages/server/src/modules/auth/authRoutes.ts:105"
+   ],
+   "test_only": false
+  },
+  {
+   "object": "Company",
+   "database": "",
+   "access": "R",
+   "via": [
+    "ORM (unresolved name)"
+   ],
+   "count": 2,
+   "sources": [
+    "packages/server/src/modules/companies/companiesRoutes.ts:17",
+    "packages/server/src/modules/trades/tradesRoutes.ts:31"
+   ],
+   "test_only": false
+  },
+  {
+   "object": "Wallet",
+   "database": "",
+   "access": "RU",
+   "via": [
+    "ORM (unresolved name)"
+   ],
+   "count": 6,
+   "sources": [
+    "packages/server/src/modules/dashboard/dashboardRoutes.ts:18",
+    "packages/server/src/modules/trades/tradesRoutes.ts:40",
+    "packages/server/src/modules/trades/tradesRoutes.ts:54",
+    "packages/server/src/modules/trades/tradesRoutes.ts:93",
+    "packages/server/src/modules/wallet/walletRoutes.ts:15",
+    "packages/server/src/modules/wallet/walletRoutes.ts:73"
+   ],
+   "test_only": false
+  },
+  {
+   "object": "Trade",
+   "database": "",
+   "access": "CR",
+   "via": [
+    "ORM (unresolved name)"
+   ],
+   "count": 3,
+   "sources": [
+    "packages/server/src/modules/dashboard/dashboardRoutes.ts:20",
+    "packages/server/src/modules/trades/tradesRoutes.ts:16",
+    "packages/server/src/modules/trades/tradesRoutes.ts:107"
+   ],
+   "test_only": false
+  },
+  {
+   "object": "InboxMessage",
+   "database": "",
+   "access": "RU",
+   "via": [
+    "ORM (unresolved name)"
+   ],
+   "count": 4,
+   "sources": [
+    "packages/server/src/modules/inbox/inboxRoutes.ts:16",
+    "packages/server/src/modules/inbox/inboxRoutes.ts:27",
+    "packages/server/src/modules/inbox/inboxRoutes.ts:39",
+    "packages/server/src/modules/inbox/inboxRoutes.ts:44"
+   ],
+   "test_only": false
+  },
+  {
+   "object": "Invoice",
+   "database": "",
+   "access": "CR",
+   "via": [
+    "ORM (unresolved name)"
+   ],
+   "count": 3,
+   "sources": [
+    "packages/server/src/modules/invoices/invoicesRoutes.ts:15",
+    "packages/server/src/modules/invoices/invoicesRoutes.ts:27",
+    "packages/server/src/modules/trades/tradesRoutes.ts:119"
+   ],
+   "test_only": false
+  },
+  {
+   "object": "Holding",
+   "database": "",
+   "access": "CDRU",
+   "via": [
+    "ORM (unresolved name)"
+   ],
+   "count": 5,
+   "sources": [
+    "packages/server/src/modules/trades/tradesRoutes.ts:43",
+    "packages/server/src/modules/trades/tradesRoutes.ts:59",
+    "packages/server/src/modules/trades/tradesRoutes.ts:64",
+    "packages/server/src/modules/trades/tradesRoutes.ts:88",
+    "packages/server/src/modules/trades/tradesRoutes.ts:90"
+   ],
+   "test_only": false
+  },
+  {
+   "object": "Transaction",
+   "database": "",
+   "access": "CRU",
+   "via": [
+    "ORM (unresolved name)"
+   ],
+   "count": 5,
+   "sources": [
+    "packages/server/src/modules/trades/tradesRoutes.ts:69",
+    "packages/server/src/modules/trades/tradesRoutes.ts:95",
+    "packages/server/src/modules/wallet/walletRoutes.ts:33",
+    "packages/server/src/modules/wallet/walletRoutes.ts:58",
+    "packages/server/src/modules/wallet/walletRoutes.ts:77"
+   ],
+   "test_only": false
+  }
+ ],
+ "procedures_called": [],
+ "definitions": [],
+ "orm_maps": [],
+ "databases": [],
+ "dynamic_sql": [],
+ "cross_db": []
+}

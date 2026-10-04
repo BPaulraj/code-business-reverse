@@ -252,7 +252,7 @@ def build_tree(cfg) -> tuple[Page, dict]:
         ov = page_from(ov_dir / "system-context.md", "Overview", root)
         ov.content += "\n\n[[_TOSP_]]\n"
         for f, t in (("component-map.md", "Component Map"), ("glossary.md", "Glossary"),
-                     ("coverage-tracker.md", "Coverage")):
+                     ("coverage-tracker.md", "Coverage"), ("sql-inventory.md", "SQL Inventory")):
             src = (req / f) if f == "component-map.md" else (ov_dir / f)
             if src.exists():
                 page_from(src, t, ov)
@@ -293,6 +293,12 @@ def build_tree(cfg) -> tuple[Page, dict]:
             for f, t in (("api-catalogue.md", "API Catalogue"), ("batch-schedule.md", "Nightly Schedule")):
                 if (d / f).exists():
                     page_from(d / f, t, cp)
+            if (d / "sql-usage.md").exists():
+                page_from(d / "sql-usage.md", "SQL Usage", cp)
+            elif (d / "_sql-scan.json").exists():
+                scan = json.loads((d / "_sql-scan.json").read_text(encoding="utf-8"))
+                if any(scan.get(k) for k in ("objects", "procedures_called", "definitions", "dynamic_sql")):
+                    page_from(d / "_sql-scan.md", "SQL Usage (scan, not yet reviewed)", cp)
             for sub, t in (("jobs", "Batch Jobs"), ("file-layouts", "File Layouts")):
                 if (d / sub).is_dir() and any((d / sub).glob("*.md")):
                     sp = cp.add(Page(t, "[[_TOSP_]]\n"))

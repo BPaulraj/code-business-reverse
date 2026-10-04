@@ -70,6 +70,7 @@ For each unticked job, create `jobs/BJ-NNN-<name>.md` from the template and fill
    - responsibilities grouped by business area
    - the entry-point table pointing to the job files
    - data touched, and configuration
+1a. **SQL usage:** run `python kit/tools/sql_scan.py <folder>`, then write `sql-usage.md` following `kit/procedures/re-sql.md` section B (purpose, entry points, rules and status for every table, procedure and dynamic-SQL site; add nested and library writes the scan can't see). Every job's input queries and output tables must appear in it, with the BJ ID as the entry point.
 2. **Update the coverage-tracker rows.** Status `Extracted`.
 3. **Final message:**
    - job count by output type (tables / files / both)

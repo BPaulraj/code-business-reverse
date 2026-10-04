@@ -42,6 +42,7 @@ Templates: `kit/templates/capability.md`, `business-rule.md`, `questions-and-def
    - purpose and responsibilities
    - entry-point table
    - data, dependencies, events and business-relevant configuration
+5a. **SQL usage:** run `python kit/tools/sql_scan.py <folder>`, then write `sql-usage.md` following `kit/procedures/re-sql.md` section B (purpose, entry points, rules and status for every table, procedure and dynamic-SQL site; add nested and library writes the scan can't see).
 6. **Update the coverage-tracker row:** counts by confidence, open questions, defects, status `Extracted`.
 7. **Final message:**
    - counts

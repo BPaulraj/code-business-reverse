@@ -55,6 +55,7 @@ Write it to `projects/<name>/deliverables/Business-Requirements-Specification.md
     - **A. Traceability matrix:** requirement ID → working file → number of code citations. No paths.
     - **B. Coverage:** components analysed and verified.
     - **C. How to give feedback:** review packs, decision values.
+    - **D. Data (if `00-overview/sql-inventory.md` exists):** databases, number of tables and procedures, and the tables written by more than one component (as business risk), linking to the inventory. No SQL text.
 
 ## Rules for writing
 

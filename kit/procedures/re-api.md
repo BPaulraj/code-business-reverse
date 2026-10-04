@@ -49,6 +49,7 @@ The web-services layer connects the front-end to the back-office and/or straight
       - tick the endpoint in `_progress.md`
       - add glossary terms, questions and defects
 6. **When every endpoint is ticked**, write `capability.md`. Put each business area as a responsibility, and point to `api-catalogue.md` as the entry-point table.
+6a. **SQL usage:** run `python kit/tools/sql_scan.py <folder>`, then write `sql-usage.md` following `kit/procedures/re-sql.md` section B (purpose, entry points, rules and status for every table, procedure and dynamic-SQL site; add nested and library writes the scan can't see). Endpoints marked *Data query* must all appear in it.
 7. **Update the coverage-tracker row:** endpoints found/done, rules by confidence, unused endpoints, status `Extracted`.
 8. **Final message:**
    - counts per logic type

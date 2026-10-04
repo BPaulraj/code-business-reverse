@@ -28,6 +28,7 @@
    | Working tree clean at start | yes / no |
    | Initialised | <YYYY-MM-DD> |
    | Output formats | md, docx, pdf — whatever the user prefers. Ask if not given; `md` alone is the minimum. |
+   | SQL default schema | dbo (MS SQL Server); (none) for engines without schemas |
    | Word template | (optional) path to a corporate .docx whose styles are used for Word output |
    | Wiki publishing | off — off (default): never upload; on-request: upload when the user runs /re-wiki; auto: also upload at the end of /re-publish. Ask the user; if unsure, keep off. |
    | ADO org URL | (optional, for /re-wiki) e.g. https://dev.azure.com/myorg or https://ado.mycorp.local/DefaultCollection |

@@ -1,0 +1,20 @@
+﻿Object,Type,Database,Component,Access,Indirect access (via procedures),Via,Business purpose,Review status,Defined in
+Company,TABLE,,database,CU,,ORM (resolved),,Unreviewed,packages/db/prisma/migrations/20260815131827_init/migration.sql:35
+Company,TABLE,,public-api,R,,ORM (unresolved name),,Unreviewed,packages/db/prisma/migrations/20260815131827_init/migration.sql:35
+Company,TABLE,,web-server,R,,ORM (unresolved name),"Tradable companies, for listing and trade validation",Confirmed,packages/db/prisma/migrations/20260815131827_init/migration.sql:35
+Holding,TABLE,,core-library,R,,ORM (unresolved name),,Unreviewed,packages/db/prisma/migrations/20260815131827_init/migration.sql:44
+Holding,TABLE,,public-api,CDRU,,ORM (unresolved name),,Unreviewed,packages/db/prisma/migrations/20260815131827_init/migration.sql:44
+Holding,TABLE,,web-server,CDRU,,ORM (unresolved name),"Client positions. Created on first buy, removed when sold out.",Confirmed,packages/db/prisma/migrations/20260815131827_init/migration.sql:44
+InboxMessage,TABLE,,core-library,C,,ORM (unresolved name),,Unreviewed,packages/db/prisma/migrations/20260815131827_init/migration.sql:79
+InboxMessage,TABLE,,public-api,R,,ORM (unresolved name),,Unreviewed,packages/db/prisma/migrations/20260815131827_init/migration.sql:79
+InboxMessage,TABLE,,web-server,CRU,,ORM (unresolved name),"Notifications. List, unread count, read status. Created through the core library.",Confirmed,packages/db/prisma/migrations/20260815131827_init/migration.sql:79
+Invoice,TABLE,,public-api,CR,,ORM (unresolved name),,Unreviewed,packages/db/prisma/migrations/20260815131827_init/migration.sql:70
+Invoice,TABLE,,web-server,CR,,ORM (unresolved name),"One invoice per trade, plus invoice download",Confirmed,packages/db/prisma/migrations/20260815131827_init/migration.sql:70
+Trade,TABLE,,public-api,CR,,ORM (unresolved name),,Unreviewed,packages/db/prisma/migrations/20260815131827_init/migration.sql:55
+Trade,TABLE,,web-server,CR,,ORM (unresolved name),Executed trades and trade history,Confirmed,packages/db/prisma/migrations/20260815131827_init/migration.sql:55
+Transaction,TABLE,,public-api,CU,,ORM (unresolved name),,Unreviewed,packages/db/prisma/migrations/20260815131827_init/migration.sql:22
+Transaction,TABLE,,web-server,CRU,,ORM (unresolved name),Wallet movements. Funding goes Pending → Success; trades are created as Success.,Confirmed,packages/db/prisma/migrations/20260815131827_init/migration.sql:22
+User,TABLE,,public-api,CRU,,ORM (unresolved name),,Unreviewed,packages/db/prisma/migrations/20260815131827_init/migration.sql:2
+User,TABLE,,web-server,CRU,,ORM (unresolved name),"Client account: registration, login, profile",Confirmed,packages/db/prisma/migrations/20260815131827_init/migration.sql:2
+Wallet,TABLE,,public-api,RU,,ORM (unresolved name),,Unreviewed,packages/db/prisma/migrations/20260815131827_init/migration.sql:14
+Wallet,TABLE,,web-server,CRU,,ORM (unresolved name),Cash balance. **Created at registration through a nested write the scanner can't see** (`packages/server/src/modules/auth/authRoutes.ts:46`).,Confirmed,packages/db/prisma/migrations/20260815131827_init/migration.sql:14

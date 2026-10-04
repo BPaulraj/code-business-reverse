@@ -34,6 +34,11 @@
    "sha": "0f9cdc70ebe834fa3b71cd2268e0521ac313eb20913716d959b2091394b53930"
   },
   {
+   "path": "/StockBroker Business Requirements/Overview/SQL Inventory",
+   "file": "StockBroker-Business-Requirements\\Overview\\SQL-Inventory.md",
+   "sha": "ab9668da7fdfe5cbb1e9378b804a91a3e042148423ebb5cea1fce2f42d7f9a42"
+  },
+  {
    "path": "/StockBroker Business Requirements/Business Processes",
    "file": "StockBroker-Business-Requirements\\Business-Processes.md",
    "sha": "b99e52055281e4927e760460faf799cbcc4c0519397b6e1217670dc0da379730"
@@ -114,6 +119,11 @@
    "sha": "f40c86f207c8f65cc87b49d369def6a8136eb44ce9397e6b238800cf86182845"
   },
   {
+   "path": "/StockBroker Business Requirements/Components/Core library/SQL Usage (scan, not yet reviewed)",
+   "file": "StockBroker-Business-Requirements\\Components\\Core-library\\SQL-Usage-(scan,-not-yet-reviewed).md",
+   "sha": "a4ea4c7911905e7125d2323965f8ecee3213a5b60397fe222565fb387df929fd"
+  },
+  {
    "path": "/StockBroker Business Requirements/Components/Core library/Questions and Issues",
    "file": "StockBroker-Business-Requirements\\Components\\Core-library\\Questions-and-Issues.md",
    "sha": "8377f8a2f21f1cbc28b0d81ce43c561e758116d37b62fa641361fd2c5a5c504e"
@@ -127,6 +137,11 @@
    "path": "/StockBroker Business Requirements/Components/Shared database/Rules",
    "file": "StockBroker-Business-Requirements\\Components\\Shared-database\\Rules.md",
    "sha": "6485be1c44165a53b3fd62639da9c88ce6d67a62aca0fef1c2d3488eb05c1575"
+  },
+  {
+   "path": "/StockBroker Business Requirements/Components/Shared database/SQL Usage (scan, not yet reviewed)",
+   "file": "StockBroker-Business-Requirements\\Components\\Shared-database\\SQL-Usage-(scan,-not-yet-reviewed).md",
+   "sha": "fe41cc8a39287576f1abeba5cd03195c7e3948caf5e40463200e054cfaaa134c"
   },
   {
    "path": "/StockBroker Business Requirements/Components/Shared database/Questions and Issues",
@@ -162,6 +177,11 @@
    "path": "/StockBroker Business Requirements/Components/Public REST API/API Catalogue",
    "file": "StockBroker-Business-Requirements\\Components\\Public-REST-API\\API-Catalogue.md",
    "sha": "d243c722580d0f48ad096d51b4406b185b3b1d5177172d8d405e080690b56be3"
+  },
+  {
+   "path": "/StockBroker Business Requirements/Components/Public REST API/SQL Usage (scan, not yet reviewed)",
+   "file": "StockBroker-Business-Requirements\\Components\\Public-REST-API\\SQL-Usage-(scan,-not-yet-reviewed).md",
+   "sha": "80d10f13dcf01d0004c5429f4f7ed4d99060c496c4b4bf57b7a6434c9a780012"
   },
   {
    "path": "/StockBroker Business Requirements/Components/Public REST API/Questions and Issues",
@@ -217,6 +237,11 @@
    "path": "/StockBroker Business Requirements/Components/Web server/API Catalogue",
    "file": "StockBroker-Business-Requirements\\Components\\Web-server\\API-Catalogue.md",
    "sha": "28b4130a08c6a92114a40436fee572548e5caa9a8d303d7d427940aef4de87c9"
+  },
+  {
+   "path": "/StockBroker Business Requirements/Components/Web server/SQL Usage",
+   "file": "StockBroker-Business-Requirements\\Components\\Web-server\\SQL-Usage.md",
+   "sha": "a650bbab7367a930781dbe1a098ed09b8d4d9d8196d163a1a454c493c369e8ce"
   },
   {
    "path": "/StockBroker Business Requirements/Components/Web server/Questions and Issues",

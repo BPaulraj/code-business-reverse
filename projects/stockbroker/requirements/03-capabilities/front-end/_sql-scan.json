@@ -1,0 +1,14 @@
+{
+ "component": "Front-end website (client portal)",
+ "paths": [
+  "packages/web"
+ ],
+ "commit": "ae607a63b46d52ef787464b70a96c33ca58d4062",
+ "objects": [],
+ "procedures_called": [],
+ "definitions": [],
+ "orm_maps": [],
+ "databases": [],
+ "dynamic_sql": [],
+ "cross_db": []
+}

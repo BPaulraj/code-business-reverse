@@ -1,0 +1,141 @@
+{
+ "component": "Public REST API",
+ "paths": [
+  "packages/api"
+ ],
+ "commit": "ae607a63b46d52ef787464b70a96c33ca58d4062",
+ "objects": [
+  {
+   "object": "Company",
+   "database": "",
+   "access": "R",
+   "via": [
+    "ORM (unresolved name)"
+   ],
+   "count": 2,
+   "sources": [
+    "packages/api/src/modules/companies/companiesRoutes.ts:16",
+    "packages/api/src/modules/trades/tradesRoutes.ts:30"
+   ],
+   "test_only": false
+  },
+  {
+   "object": "InboxMessage",
+   "database": "",
+   "access": "R",
+   "via": [
+    "ORM (unresolved name)"
+   ],
+   "count": 2,
+   "sources": [
+    "packages/api/src/modules/inbox/inboxRoutes.ts:14",
+    "packages/api/src/modules/inbox/inboxRoutes.ts:25"
+   ],
+   "test_only": false
+  },
+  {
+   "object": "Trade",
+   "database": "",
+   "access": "CR",
+   "via": [
+    "ORM (unresolved name)"
+   ],
+   "count": 3,
+   "sources": [
+    "packages/api/src/modules/invoices/invoicesRoutes.ts:14",
+    "packages/api/src/modules/trades/tradesRoutes.ts:15",
+    "packages/api/src/modules/trades/tradesRoutes.ts:108"
+   ],
+   "test_only": false
+  },
+  {
+   "object": "Invoice",
+   "database": "",
+   "access": "CR",
+   "via": [
+    "ORM (unresolved name)"
+   ],
+   "count": 2,
+   "sources": [
+    "packages/api/src/modules/invoices/invoicesRoutes.ts:33",
+    "packages/api/src/modules/trades/tradesRoutes.ts:120"
+   ],
+   "test_only": false
+  },
+  {
+   "object": "Wallet",
+   "database": "",
+   "access": "RU",
+   "via": [
+    "ORM (unresolved name)"
+   ],
+   "count": 7,
+   "sources": [
+    "packages/api/src/modules/payments/paymentsRoutes.ts:17",
+    "packages/api/src/modules/payments/paymentsRoutes.ts:47",
+    "packages/api/src/modules/portfolio/portfolioRoutes.ts:15",
+    "packages/api/src/modules/trades/tradesRoutes.ts:41",
+    "packages/api/src/modules/trades/tradesRoutes.ts:55",
+    "packages/api/src/modules/trades/tradesRoutes.ts:94",
+    "packages/api/src/modules/wallet/walletRoutes.ts:15"
+   ],
+   "test_only": false
+  },
+  {
+   "object": "Transaction",
+   "database": "",
+   "access": "CU",
+   "via": [
+    "ORM (unresolved name)"
+   ],
+   "count": 4,
+   "sources": [
+    "packages/api/src/modules/payments/paymentsRoutes.ts:31",
+    "packages/api/src/modules/payments/paymentsRoutes.ts:51",
+    "packages/api/src/modules/trades/tradesRoutes.ts:70",
+    "packages/api/src/modules/trades/tradesRoutes.ts:96"
+   ],
+   "test_only": false
+  },
+  {
+   "object": "User",
+   "database": "",
+   "access": "CRU",
+   "via": [
+    "ORM (unresolved name)"
+   ],
+   "count": 5,
+   "sources": [
+    "packages/api/src/modules/sessions/sessionsRoutes.ts:16",
+    "packages/api/src/modules/users/usersRoutes.ts:17",
+    "packages/api/src/modules/users/usersRoutes.ts:26",
+    "packages/api/src/modules/users/usersRoutes.ts:52",
+    "packages/api/src/modules/users/usersRoutes.ts:63"
+   ],
+   "test_only": false
+  },
+  {
+   "object": "Holding",
+   "database": "",
+   "access": "CDRU",
+   "via": [
+    "ORM (unresolved name)"
+   ],
+   "count": 5,
+   "sources": [
+    "packages/api/src/modules/trades/tradesRoutes.ts:44",
+    "packages/api/src/modules/trades/tradesRoutes.ts:60",
+    "packages/api/src/modules/trades/tradesRoutes.ts:65",
+    "packages/api/src/modules/trades/tradesRoutes.ts:89",
+    "packages/api/src/modules/trades/tradesRoutes.ts:91"
+   ],
+   "test_only": false
+  }
+ ],
+ "procedures_called": [],
+ "definitions": [],
+ "orm_maps": [],
+ "databases": [],
+ "dynamic_sql": [],
+ "cross_db": []
+}

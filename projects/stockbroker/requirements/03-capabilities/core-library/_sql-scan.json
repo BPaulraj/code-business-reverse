@@ -1,0 +1,43 @@
+{
+ "component": "Core library (shared domain services and validation)",
+ "paths": [
+  "packages/db/src/services",
+  "packages/db/src/mappers",
+  "packages/shared/src"
+ ],
+ "commit": "ae607a63b46d52ef787464b70a96c33ca58d4062",
+ "objects": [
+  {
+   "object": "Holding",
+   "database": "",
+   "access": "R",
+   "via": [
+    "ORM (unresolved name)"
+   ],
+   "count": 1,
+   "sources": [
+    "packages/db/src/services/holdingsService.ts:6"
+   ],
+   "test_only": false
+  },
+  {
+   "object": "InboxMessage",
+   "database": "",
+   "access": "C",
+   "via": [
+    "ORM (unresolved name)"
+   ],
+   "count": 1,
+   "sources": [
+    "packages/db/src/services/inboxService.ts:11"
+   ],
+   "test_only": false
+  }
+ ],
+ "procedures_called": [],
+ "definitions": [],
+ "orm_maps": [],
+ "databases": [],
+ "dynamic_sql": [],
+ "cross_db": []
+}

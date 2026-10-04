@@ -21,6 +21,7 @@ Follow `kit/RULES.md`. Start with §0: resolve `<OUT>` and `<TARGET>`.
 4. **Regenerate `<OUT>/06-open-questions.md`** from all `_questions.md` files **and** the Questions sections of batch job files. Group by area, open items first.
 5. **Regenerate `<OUT>/07-suspected-defects.md`** from all `_defects.md` files **and** the Suspected defects sections of batch job files. Group by area, open items first.
 6. **Batch rules index.** In each batch folder's `rules.md`, keep the shared `000` rules and regenerate an index table of all job rules: ID, job, title, Confidence, Status, with links to the job files.
+6a. **SQL inventory:** if any `_sql-scan.json` exists, run `python kit/tools/sql_inventory.py` to regenerate `00-overview/sql-inventory.md` and `.csv`. Report unreviewed usages and shared-write tables.
 7. **Consistency checks.** Report each of these:
    - duplicate IDs
    - BR / Q / D references that point to nothing

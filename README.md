@@ -13,10 +13,12 @@ A kit for extracting business requirements from a legacy codebase, so the produc
 code-business-reverse/
 ├── kit/                               ← SINGLE SOURCE OF TRUTH (tool-neutral)
 │   ├── RULES.md                       # project resolution, evidence, confidence, IDs, checkpoints
-│   ├── procedures/re-*.md             # the 18 procedures (what each command does)
+│   ├── procedures/re-*.md             # the 19 procedures (what each command does)
 │   ├── templates/                     # rule, capability, process, entity, integration, journey,
 │   │                                  # Q/defect, api-catalogue, batch-job, file-layout, plan
 │   ├── examples/good-vs-bad-rules.md  # calibrates output quality
+│   ├── tools/sql_scan.py              # mechanical SQL scanner (MS SQL/T-SQL, ORMs, SSDT, SSIS/SSRS)
+│   ├── tools/sql_inventory.py         # system-wide SQL inventory + usage matrix + CSV
 │   ├── tools/ado_wiki.py              # working files → Azure DevOps wiki pages (build / push)
 │   ├── tools/export_doc.py            # Markdown → Word (.docx) / PDF, offline (vendor/mermaid.min.js for diagrams)
 │   └── skeleton/requirements/         # empty output structure, copied by /re-init
@@ -67,7 +69,8 @@ code-business-reverse/
 | `/re-apply-review <pack>` | Write product decisions back |
 | `/re-publish [draft\|baseline] [docx\|pdf\|both]` | Generate the stakeholder Business Requirements Specification (+ Word/PDF) |
 | `/re-export [file] [docx\|pdf\|both]` | Export any generated Markdown (BRS, review pack, process) to Word and/or PDF |
-| `/re-coverage` | Recount, consolidate, consistency and citation checks |
+| `/re-coverage` | Recount, consolidate, consistency and citation checks (also rebuilds the SQL inventory) |
+| `/re-sql [<component>\|--all] [inventory]` | SQL inventory: tables, queries and stored procedures per component, plus the system-wide usage matrix (+CSV) |
 | `/re-wiki [build\|push\|publish] [--dry-run]` | Publish to an Azure DevOps wiki: one page per component, sub-pages when large (cloud or on-prem) |
 
 ## Setup
@@ -78,7 +81,7 @@ First, confirm that your organisation allows AI-assisted analysis of the codebas
 
 1. Copy `reverse-kit.code-workspace.example` to `reverse-kit.code-workspace`. Set the second folder path to your mono repo, then use **File → Open Workspace from File**. Copilot can now read the mono repo. The `files.readonlyInclude` setting in the workspace file helps prevent accidental edits.
 2. Open **Copilot Chat** and switch to **Agent** mode. The prompt files already request agent mode.
-3. Type `/re-init platform D:\path\to\mono-repo`. All 18 `/re-*` prompts appear when you type `/`.
+3. Type `/re-init platform D:\path\to\mono-repo`. All 19 `/re-*` prompts appear when you type `/`.
 4. If prompts or instructions don't appear, check that your organisation's Copilot policy allows **prompt files** and **custom instructions**, and that VS Code is recent.
 
 Copilot notes:
@@ -156,6 +159,15 @@ The stakeholder document is always produced as Markdown, which renders on GitHub
 - **Corporate branding:** set **Word template** in `project.md` (or pass `template=<file.docx>`). Its heading, table and font styles are reused.
 - **Product reviews in Word:** `/re-export <review-pack>.md docx`. Copy the decisions back into the Markdown pack before `/re-apply-review`.
 - **Run it directly:** `python kit/tools/export_doc.py <file.md> --format both` (see `--help`).
+
+## SQL inventory (tables, queries, stored procedures)
+
+Each component gets a **`sql-usage.md`** listing which tables and views it reads and writes, the stored procedures it calls, its dynamic SQL, and its cross-database links, each with a business purpose, entry points and rules. **`00-overview/sql-inventory.md` + `.csv`** is generated from those files: an object catalogue, a **usage matrix** (component × table, including access *through* stored procedures), tables written by several components, procedures with their reads and writes, possibly dead objects, objects used but not defined, and linked-server dependencies.
+
+- **Facts come from a scanner** (`kit/tools/sql_scan.py`, no AI): queries embedded in C#/Java/…, ADO.NET/Dapper/Entity Framework/JDBC/Spring/MyBatis calls, JPA/Entity Framework/Hibernate mappings, SSDT/`.sql` definitions, SSIS/SSRS, and connection-string database names (never credentials).
+- **Meaning comes from the review** in `sql-usage.md`: purpose, entry points, rules, and a Status (Confirmed / False positive). Reviewers also add writes the scanner can't see.
+- **When it runs:** automatically in `/re-service`, `/re-api`, `/re-batch` and `/re-domain`; on demand with `/re-sql`; and the inventory is rebuilt by `/re-coverage`. Set `SQL default schema` in `project.md` (`dbo` for MS SQL Server).
+- **Stored procedures that exist only in the database:** export them (SSDT, SSMS Generate Scripts, sqlpackage) into `projects/<name>/evidence/database/` so they can be scanned.
 
 ## Azure DevOps wiki
 
