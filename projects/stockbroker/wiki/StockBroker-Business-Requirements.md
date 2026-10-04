@@ -5,7 +5,7 @@
 | Item | Value |
 |---|---|
 | Document | Business Requirements Specification, as-is (reverse-engineered) |
-| Version | 0.1 (draft) |
+| Version | 0.2 (draft): adds Appendix D, data and SQL inventory |
 | Date | 2026-10-04 |
 | System | StockBroker demo platform: web portal and public REST API |
 | Code version analysed | commit `ae607a6` |

@@ -7,7 +7,7 @@
 | Item | Value |
 |---|---|
 | Document | Business Requirements Specification, as-is (reverse-engineered) |
-| Version | 0.1 (draft) |
+| Version | 0.2 (draft): adds Appendix D, data and SQL inventory |
 | Date | 2026-10-04 |
 | System | StockBroker demo platform: web portal and public REST API |
 | Code version analysed | commit `ae607a6` |
@@ -483,3 +483,24 @@ Product decisions are captured through **review packs** (`requirements/_review/`
 | Unsure | Needs discussion |
 
 Decisions are applied to the working files with `/re-apply-review`, and this document is then regenerated with `/re-publish`. Once enough is confirmed, publish with `/re-publish baseline` to produce the agreed requirements baseline.
+
+## Appendix D — Data (from the SQL inventory)
+
+Summary of the system-wide SQL inventory (`requirements/00-overview/sql-inventory.md`; spreadsheet: `sql-inventory.csv`).
+
+| Item | Value |
+|---|---|
+| Data store | One shared database used by both channels (portal back end and public API) |
+| Business tables | 8: Client account, Wallet, Wallet transaction, Company, Holding, Trade, Invoice, Inbox message |
+| Stored procedures / views | None. All business logic is in application code. |
+| Cross-database or external data links | None |
+| SQL usage reviewed | Portal back end: reviewed. Public API, shared library and database: scan results awaiting review. |
+
+**Data written by more than one component (business risk)**
+
+When two components write the same data, a business rule on that data has to be enforced in both places. If one is changed and the other isn't, they drift apart.
+
+| Data | Written by | Related issue |
+|---|---|---|
+| Holding, Trade, Invoice, Wallet transaction, Wallet, Client account | Portal back end **and** public API | D-API-001: trading, funding and registration rules are maintained twice |
+| Inbox message | Portal back end and shared library (both channels send notifications through it) | D-WEB-002: notifications are written after the trade is saved |
