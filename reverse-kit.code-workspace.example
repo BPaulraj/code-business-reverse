@@ -1,0 +1,15 @@
+{
+  // Copy to "reverse-kit.code-workspace" (or "<project>.code-workspace"), set the second path,
+  // then File > Open Workspace from File. Copilot agent mode can then read the application repo.
+  // Keep the kit folder FIRST: prompt files, agents and copilot-instructions are loaded from it.
+  "folders": [
+    { "name": "reverse-kit", "path": "." },
+    { "name": "TARGET (read-only)", "path": "D:/path/to/your/mono-repo" }
+  ],
+  "settings": {
+    // Discourage accidental edits to the application repo from the editor itself.
+    "files.readonlyInclude": {
+      "D:/path/to/your/mono-repo/**": true
+    }
+  }
+}

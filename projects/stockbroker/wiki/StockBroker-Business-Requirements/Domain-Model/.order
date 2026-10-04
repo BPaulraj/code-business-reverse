@@ -1,0 +1,8 @@
+ENT%2DClient-—-Client-account
+ENT%2DCompany-—-Listed-company
+ENT%2DHolding-—-Share-holding-(position)
+ENT%2DInboxMessage-—-Inbox-message
+ENT%2DInvoice-—-Trade-invoice
+ENT%2DTrade-—-Trade
+ENT%2DWalletTransaction-—-Wallet-transaction
+ENT%2DWallet-—-Cash-wallet

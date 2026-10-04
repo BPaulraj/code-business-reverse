@@ -1,0 +1,267 @@
+{
+ "root": "StockBroker Business Requirements",
+ "view": "business",
+ "built": "2026-10-04",
+ "pages": [
+  {
+   "path": "/StockBroker Business Requirements",
+   "file": "StockBroker-Business-Requirements.md",
+   "sha": "c4b94ab44711f80f51e3580a9ed0769c7ef14554998e59a9f9988e7305abc3e3"
+  },
+  {
+   "path": "/StockBroker Business Requirements/Business Requirements Specification",
+   "file": "StockBroker-Business-Requirements\\Business-Requirements-Specification.md",
+   "sha": "a6f4c19bda7a758ec59977d24a9603e2e400378787b6b61e47de132bdc2b7db5"
+  },
+  {
+   "path": "/StockBroker Business Requirements/Overview",
+   "file": "StockBroker-Business-Requirements\\Overview.md",
+   "sha": "319d4bce51177b517a90891e18988e245286d18c5ad854a68a155005c4a02a1a"
+  },
+  {
+   "path": "/StockBroker Business Requirements/Overview/Component Map",
+   "file": "StockBroker-Business-Requirements\\Overview\\Component-Map.md",
+   "sha": "f67c054f33f917acafa576d28ba46c0506782d06a61b6c7925c25ea5440e84e9"
+  },
+  {
+   "path": "/StockBroker Business Requirements/Overview/Glossary",
+   "file": "StockBroker-Business-Requirements\\Overview\\Glossary.md",
+   "sha": "0c9dc3fa88d91d5f20bdba2c5bc194102aac999d04c5cffcde7bba8518fda57a"
+  },
+  {
+   "path": "/StockBroker Business Requirements/Overview/Coverage",
+   "file": "StockBroker-Business-Requirements\\Overview\\Coverage.md",
+   "sha": "0f9cdc70ebe834fa3b71cd2268e0521ac313eb20913716d959b2091394b53930"
+  },
+  {
+   "path": "/StockBroker Business Requirements/Business Processes",
+   "file": "StockBroker-Business-Requirements\\Business-Processes.md",
+   "sha": "b99e52055281e4927e760460faf799cbcc4c0519397b6e1217670dc0da379730"
+  },
+  {
+   "path": "/StockBroker Business Requirements/Business Processes/P-001 \u2014 Place a trade (buy or sell)",
+   "file": "StockBroker-Business-Requirements\\Business-Processes\\P%2D001-\u2014-Place-a-trade-(buy-or-sell).md",
+   "sha": "3df0906eb9abe9708fd89387a60e71eec6cc7d6377ff1219cba902fb34dfcb14"
+  },
+  {
+   "path": "/StockBroker Business Requirements/Business Processes/P-002 \u2014 Add funds to wallet",
+   "file": "StockBroker-Business-Requirements\\Business-Processes\\P%2D002-\u2014-Add-funds-to-wallet.md",
+   "sha": "cdb8e23585d02427e3f0b7e3e8d3b5b74c64c4e435456f9d95c39915e465ad90"
+  },
+  {
+   "path": "/StockBroker Business Requirements/Business Processes/P-003 \u2014 Register a new client",
+   "file": "StockBroker-Business-Requirements\\Business-Processes\\P%2D003-\u2014-Register-a-new-client.md",
+   "sha": "c562e60f37aaa1e2c80eb3a911bd5f894382981ed1a4456eaaf076d9178d015f"
+  },
+  {
+   "path": "/StockBroker Business Requirements/Domain Model",
+   "file": "StockBroker-Business-Requirements\\Domain-Model.md",
+   "sha": "db0a90f7ce30c0596bb228081f19eacddae1937ed0dcad401e5d199aa1bf9436"
+  },
+  {
+   "path": "/StockBroker Business Requirements/Domain Model/ENT-Client \u2014 Client account",
+   "file": "StockBroker-Business-Requirements\\Domain-Model\\ENT%2DClient-\u2014-Client-account.md",
+   "sha": "93cf1628c544da801621ab9a3f693d759ee6e2328974bef9951e7969af111d54"
+  },
+  {
+   "path": "/StockBroker Business Requirements/Domain Model/ENT-Company \u2014 Listed company",
+   "file": "StockBroker-Business-Requirements\\Domain-Model\\ENT%2DCompany-\u2014-Listed-company.md",
+   "sha": "748f7220d5e6d6328c13b3252867ce6757ba7607477b31278bf753aa53a24953"
+  },
+  {
+   "path": "/StockBroker Business Requirements/Domain Model/ENT-Holding \u2014 Share holding (position)",
+   "file": "StockBroker-Business-Requirements\\Domain-Model\\ENT%2DHolding-\u2014-Share-holding-(position).md",
+   "sha": "d950ba0d7b12cb3703ec27be4438a2f705ae86338b3a465882580b09fae082b8"
+  },
+  {
+   "path": "/StockBroker Business Requirements/Domain Model/ENT-InboxMessage \u2014 Inbox message",
+   "file": "StockBroker-Business-Requirements\\Domain-Model\\ENT%2DInboxMessage-\u2014-Inbox-message.md",
+   "sha": "7de526c5a5eb51ec0250c59253367af685bacf13469bc02586663e4115f1ae88"
+  },
+  {
+   "path": "/StockBroker Business Requirements/Domain Model/ENT-Invoice \u2014 Trade invoice",
+   "file": "StockBroker-Business-Requirements\\Domain-Model\\ENT%2DInvoice-\u2014-Trade-invoice.md",
+   "sha": "d744a8847a98e5e90bb85604fcefabab4d73e3eccc7f93be93927b616aded5c5"
+  },
+  {
+   "path": "/StockBroker Business Requirements/Domain Model/ENT-Trade \u2014 Trade",
+   "file": "StockBroker-Business-Requirements\\Domain-Model\\ENT%2DTrade-\u2014-Trade.md",
+   "sha": "d4222684cf77212d01f1af8b58372439401886bbf8056c4afbd611bdeb6da30f"
+  },
+  {
+   "path": "/StockBroker Business Requirements/Domain Model/ENT-WalletTransaction \u2014 Wallet transaction",
+   "file": "StockBroker-Business-Requirements\\Domain-Model\\ENT%2DWalletTransaction-\u2014-Wallet-transaction.md",
+   "sha": "4e57b5086794ffd41bef58c56b75a149931d2572865e85aff357e124a4c3cc8e"
+  },
+  {
+   "path": "/StockBroker Business Requirements/Domain Model/ENT-Wallet \u2014 Cash wallet",
+   "file": "StockBroker-Business-Requirements\\Domain-Model\\ENT%2DWallet-\u2014-Cash-wallet.md",
+   "sha": "e28ca7d2f90d02df578cc8e6104c457622750a336ab4519c501f1d6d087b8001"
+  },
+  {
+   "path": "/StockBroker Business Requirements/Components",
+   "file": "StockBroker-Business-Requirements\\Components.md",
+   "sha": "7db70e19e138db438151b53f2fb548d03a3299c6520f3cf05f027527ef68ff6d"
+  },
+  {
+   "path": "/StockBroker Business Requirements/Components/Core library",
+   "file": "StockBroker-Business-Requirements\\Components\\Core-library.md",
+   "sha": "a6ca41031c832b6e913a86f99bb5f7eb877442d3095a559364c376dbda50b0af"
+  },
+  {
+   "path": "/StockBroker Business Requirements/Components/Core library/Rules",
+   "file": "StockBroker-Business-Requirements\\Components\\Core-library\\Rules.md",
+   "sha": "f40c86f207c8f65cc87b49d369def6a8136eb44ce9397e6b238800cf86182845"
+  },
+  {
+   "path": "/StockBroker Business Requirements/Components/Core library/Questions and Issues",
+   "file": "StockBroker-Business-Requirements\\Components\\Core-library\\Questions-and-Issues.md",
+   "sha": "8377f8a2f21f1cbc28b0d81ce43c561e758116d37b62fa641361fd2c5a5c504e"
+  },
+  {
+   "path": "/StockBroker Business Requirements/Components/Shared database",
+   "file": "StockBroker-Business-Requirements\\Components\\Shared-database.md",
+   "sha": "b003c0760c563fabbaa842b19fb73691283cb09eb02772ec43f037e302d0ca33"
+  },
+  {
+   "path": "/StockBroker Business Requirements/Components/Shared database/Rules",
+   "file": "StockBroker-Business-Requirements\\Components\\Shared-database\\Rules.md",
+   "sha": "6485be1c44165a53b3fd62639da9c88ce6d67a62aca0fef1c2d3488eb05c1575"
+  },
+  {
+   "path": "/StockBroker Business Requirements/Components/Shared database/Questions and Issues",
+   "file": "StockBroker-Business-Requirements\\Components\\Shared-database\\Questions-and-Issues.md",
+   "sha": "53308d8fcfbf7dac9a370564c99e1afbf9da3df02f9a3aaee972ee582d0154ea"
+  },
+  {
+   "path": "/StockBroker Business Requirements/Components/Front-end website",
+   "file": "StockBroker-Business-Requirements\\Components\\Front%2Dend-website.md",
+   "sha": "b71a270b643f9c8158d993de18ba0335e3ba6dbc5d5cfe192e5408d5f646e0f5"
+  },
+  {
+   "path": "/StockBroker Business Requirements/Components/Front-end website/Rules",
+   "file": "StockBroker-Business-Requirements\\Components\\Front%2Dend-website\\Rules.md",
+   "sha": "949e97e23c2ab272c18c24a12f4428a9fc518ed7f126908083b5c0fd0662f5d9"
+  },
+  {
+   "path": "/StockBroker Business Requirements/Components/Front-end website/Questions and Issues",
+   "file": "StockBroker-Business-Requirements\\Components\\Front%2Dend-website\\Questions-and-Issues.md",
+   "sha": "ce02f457e2b17b232567739737131ce8e6d0bdd1d1fbb541d7b88036ee9512bf"
+  },
+  {
+   "path": "/StockBroker Business Requirements/Components/Public REST API",
+   "file": "StockBroker-Business-Requirements\\Components\\Public-REST-API.md",
+   "sha": "faba3d2b69057b45f569f7a373e878bdb87ac74562ec83813764405be117df24"
+  },
+  {
+   "path": "/StockBroker Business Requirements/Components/Public REST API/Rules",
+   "file": "StockBroker-Business-Requirements\\Components\\Public-REST-API\\Rules.md",
+   "sha": "68cbe8bd184dd67ab2c2e39d89f5536ac0002cdf59424169c4716a63c660f946"
+  },
+  {
+   "path": "/StockBroker Business Requirements/Components/Public REST API/API Catalogue",
+   "file": "StockBroker-Business-Requirements\\Components\\Public-REST-API\\API-Catalogue.md",
+   "sha": "d243c722580d0f48ad096d51b4406b185b3b1d5177172d8d405e080690b56be3"
+  },
+  {
+   "path": "/StockBroker Business Requirements/Components/Public REST API/Questions and Issues",
+   "file": "StockBroker-Business-Requirements\\Components\\Public-REST-API\\Questions-and-Issues.md",
+   "sha": "87092ab69d15be1c5721c76bc30f0ecce34315c8375a66686767643f74f94f90"
+  },
+  {
+   "path": "/StockBroker Business Requirements/Components/Web server",
+   "file": "StockBroker-Business-Requirements\\Components\\Web-server.md",
+   "sha": "754f80ce6e9236a0b428ea8938f3075afe0f80c2101c5c61d3b2158714a9f364"
+  },
+  {
+   "path": "/StockBroker Business Requirements/Components/Web server/Rules",
+   "file": "StockBroker-Business-Requirements\\Components\\Web-server\\Rules.md",
+   "sha": "225c99090c78ffdc631e17bc397823848727698d9e8148d36a73814d9f50d02c"
+  },
+  {
+   "path": "/StockBroker Business Requirements/Components/Web server/Rules/Rules - Cross-cutting",
+   "file": "StockBroker-Business-Requirements\\Components\\Web-server\\Rules\\Rules-%2D-Cross%2Dcutting.md",
+   "sha": "a884f7dd484325cd01262be573df1e8144210bf357c36042854df78c084556dd"
+  },
+  {
+   "path": "/StockBroker Business Requirements/Components/Web server/Rules/Rules - Registration, login, profile",
+   "file": "StockBroker-Business-Requirements\\Components\\Web-server\\Rules\\Rules-%2D-Registration,-login,-profile.md",
+   "sha": "4a1cf700855be1cd67ac0b4353d4f816f5d870d16c8f70217972e07099f1474b"
+  },
+  {
+   "path": "/StockBroker Business Requirements/Components/Web server/Rules/Rules - Market and portfolio",
+   "file": "StockBroker-Business-Requirements\\Components\\Web-server\\Rules\\Rules-%2D-Market-and-portfolio.md",
+   "sha": "265ca8df815f47f3fbf3b56118d2c77670a75a7b81bedc0e054c3fd6e4585315"
+  },
+  {
+   "path": "/StockBroker Business Requirements/Components/Web server/Rules/Rules - Wallet and funding",
+   "file": "StockBroker-Business-Requirements\\Components\\Web-server\\Rules\\Rules-%2D-Wallet-and-funding.md",
+   "sha": "e5a2fe689696c758dafe15c0bf23057d2c90d5309474a97cb315bc2d5743814d"
+  },
+  {
+   "path": "/StockBroker Business Requirements/Components/Web server/Rules/Rules - Trading",
+   "file": "StockBroker-Business-Requirements\\Components\\Web-server\\Rules\\Rules-%2D-Trading.md",
+   "sha": "02857c23b42cc5ef392c3f880e348e7f019f4e0814eecc10267607d80226d732"
+  },
+  {
+   "path": "/StockBroker Business Requirements/Components/Web server/Rules/Rules - Invoices and inbox",
+   "file": "StockBroker-Business-Requirements\\Components\\Web-server\\Rules\\Rules-%2D-Invoices-and-inbox.md",
+   "sha": "084a2140d18734c20af8e5367bfff356c1372e16c136c74caf018c4d3cb3f44c"
+  },
+  {
+   "path": "/StockBroker Business Requirements/Components/Web server/Rules/Rules - Data protection",
+   "file": "StockBroker-Business-Requirements\\Components\\Web-server\\Rules\\Rules-%2D-Data-protection.md",
+   "sha": "8cb6fcb444c9af406b1340b1dd3d91e13f696544141e4973b1e750a491b44fe5"
+  },
+  {
+   "path": "/StockBroker Business Requirements/Components/Web server/API Catalogue",
+   "file": "StockBroker-Business-Requirements\\Components\\Web-server\\API-Catalogue.md",
+   "sha": "28b4130a08c6a92114a40436fee572548e5caa9a8d303d7d427940aef4de87c9"
+  },
+  {
+   "path": "/StockBroker Business Requirements/Components/Web server/Questions and Issues",
+   "file": "StockBroker-Business-Requirements\\Components\\Web-server\\Questions-and-Issues.md",
+   "sha": "dcbfad4b0b7d8ad6775103d6ea5884b82c3c9793060c8066246ff1a5a8d55edc"
+  },
+  {
+   "path": "/StockBroker Business Requirements/User Journeys",
+   "file": "StockBroker-Business-Requirements\\User-Journeys.md",
+   "sha": "714f00955e31bb78aa5cbe1f043f8e4b78e82a4e334809c2cc902a3433edf787"
+  },
+  {
+   "path": "/StockBroker Business Requirements/User Journeys/Front Office",
+   "file": "StockBroker-Business-Requirements\\User-Journeys\\Front-Office.md",
+   "sha": "138a452babf01ed58c1d80af4fdf70855cee7d65d58a91313d2cac161de404e3"
+  },
+  {
+   "path": "/StockBroker Business Requirements/User Journeys/Front Office/Roles and permissions \u2014 Front-office",
+   "file": "StockBroker-Business-Requirements\\User-Journeys\\Front-Office\\Roles-and-permissions-\u2014-Front%2Doffice.md",
+   "sha": "f26e718f511110a7f5398c1f643c9faebf4c46139805b3d5f767de05cfbeffdb"
+  },
+  {
+   "path": "/StockBroker Business Requirements/User Journeys/Front Office/UJ-FO-004 \u2014 Buy or sell shares",
+   "file": "StockBroker-Business-Requirements\\User-Journeys\\Front-Office\\UJ%2DFO%2D004-\u2014-Buy-or-sell-shares.md",
+   "sha": "68c9e3c4fbba23619550ba732f7fe435af2f4ff1213eaa987a989063334aa2e9"
+  },
+  {
+   "path": "/StockBroker Business Requirements/User Journeys/Front Office/UJ-FO-005 \u2014 Add funds to wallet",
+   "file": "StockBroker-Business-Requirements\\User-Journeys\\Front-Office\\UJ%2DFO%2D005-\u2014-Add-funds-to-wallet.md",
+   "sha": "6b47447084052ca96a88b01b69c3234404baa79b870d716beadeae3a17224676"
+  },
+  {
+   "path": "/StockBroker Business Requirements/User Journeys/Front Office/UJ-FO-001, 002, 003, 006, 007 \u2014 Smaller journeys",
+   "file": "StockBroker-Business-Requirements\\User-Journeys\\Front-Office\\UJ%2DFO%2D001,-002,-003,-006,-007-\u2014-Smaller-journeys.md",
+   "sha": "d5e4da58a1e7dc36be507834c24fa0c1d427b32f59ac9bb5bc11106936b9ab85"
+  },
+  {
+   "path": "/StockBroker Business Requirements/Open Decisions",
+   "file": "StockBroker-Business-Requirements\\Open-Decisions.md",
+   "sha": "1741c16328939c587993bf150fc2c703c06964ea8faa3323a90475462ccdb1dc"
+  },
+  {
+   "path": "/StockBroker Business Requirements/Known Issues",
+   "file": "StockBroker-Business-Requirements\\Known-Issues.md",
+   "sha": "a3e5593c555a81daedf62f6864a20afeaaf303bc0ae621feb28386053ab40b49"
+  }
+ ]
+}

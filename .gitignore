@@ -1,0 +1,12 @@
+# Local credentials — never commit
+ado.properties
+*.pat
+.env
+
+# Local VS Code workspace (contains machine-specific paths); the .example is tracked
+*.code-workspace
+!*.code-workspace.example
+
+# Python caches
+__pycache__/
+*.pyc

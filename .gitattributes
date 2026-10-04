@@ -1,0 +1,11 @@
+# Normalise line endings in the repo; keep LF for scripts and markdown
+* text=auto eol=lf
+*.pdf  binary
+*.docx binary
+*.png  binary
+
+# Third-party bundle and generated output: hide from language stats and diffs
+kit/tools/vendor/**  linguist-vendored -diff
+projects/*/wiki/**   linguist-generated
+projects/*/deliverables/*.pdf  linguist-generated
+projects/*/deliverables/*.docx linguist-generated

@@ -1,0 +1,10 @@
+---
+description: Phase 4 – extract user journeys, screen validations and role permissions from a website (front-office or back-office). Resumable.
+argument-hint: "<front-end | back-office>"
+agent: agent
+---
+
+Read and follow [the re-ui procedure](../../kit/procedures/re-ui.md) exactly. It is the single source of truth for this command.
+First read [the rules](../../kit/RULES.md) and resolve `<OUT>` and `<TARGET>` (§0).
+
+ARGUMENTS: whatever the user typed after the prompt name in their message. If nothing was typed and the procedure needs arguments, ask for them.
